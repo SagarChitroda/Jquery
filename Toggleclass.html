@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggleclass</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <style>
+
+        #table{
+            transition: 1s;
+
+        }
+
+        button{
+            display: block;
+            margin: 0 auto;
+        }
+
+        .border{
+            border: solid 2px red;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div id="table">
+
+    <table  border="0" align="center" bgcolor="">
+                <h1>    Jquery      </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, distinctio. Voluptatum corrupti similique sint libero debitis doloremque delectus nulla, veniam beatae, assumenda fuga magnam repudiandae dicta, exercitationem itaque ab ad.</p>
+    </table>
+
+    <button id="toggalclass">ToggleClass</button>
+
+    <script>
+
+        $('#toggalclass').click(function () {
+            $('#table'). toggleClass('border')
+        })
+
+    </script>
+
+</div>
+
+
+
+</body>
+</html>
