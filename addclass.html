@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addclass</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    .bgimg{
+        background-image: url(./pexels-alexgtacar-1592384.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        height: 800px;
+        text-align: center;
+        transition: 2s;
+    }
+    .p1{
+        color: azure;
+    }
+    .h2{
+        color: azure;
+    }
+
+</style>
+
+<body>
+    
+<div id="car">
+
+      <h1>My car Img</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolore architecto? Est, assumenda sapiente. Pariatur quasi eligendi dolorem eum quo libero sint temporibus alias. Reprehenderit minus voluptates amet nulla voluptatibus?</p>
+
+      <button id="bgclick">Add BG Img</button>
+
+</div>
+
+    <script>
+        $(document).ready(function(){
+            $("#bgclick").click(function(){
+              $("#car").addClass("bgimg p1 h2")  
+            })
+        })
+    </script>
+
+</body>
+</html>
