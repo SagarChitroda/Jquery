@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedin</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            display: none;
+        }
+        #box1{
+            background-color: rgb(166, 255, 0);
+        }
+        #box2{
+            background-color: blueviolet;
+        }
+        #box3{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <button id="fedin">Fedin</button>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    
+<script>
+
+    $('#fedin').click(function(){
+        $('#box1').fadeIn()
+        $('#box2').fadeIn(5000) //5000 = 5 second
+        $('#box3').fadeIn(5000)
+    })
+
+</script>
+</body>
+</html>
