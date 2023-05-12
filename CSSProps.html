@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Props</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        div {
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+            border: 10px solid hotpink;
+            float: left;
+        }
+
+        #ram {
+            height: 100px;
+            background-color: aqua;
+            width: 100px;
+            border: salmon solid 10px;
+            float: left;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #arjun {
+            height: 100px;
+            background-color: rgb(0, 255, 55);
+            width: 100px;
+            border: salmon solid 10px;
+            float: left;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #nakul {
+            height: 100px;
+            background-color: rgb(255, 217, 0);
+            width: 100px;
+            border: salmon solid 10px;
+            float: left;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #bhishm {
+            height: 100px;
+            background-color: rgba(38, 0, 255, 0.329);
+            width: 100px;
+            border: salmon solid 10px;
+            float: left;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #karn {
+            height: 100px;
+            background-color: rgba(255, 0, 0, 0.329);
+            width: 100px;
+            border: salmon solid 10px;
+            float: left;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="result">&nbsp;</p>
+    <div id="ram">Ram</div>
+    <div id="arjun">Arjun</div>
+    <div id="nakul">Nakul</div>
+    <div id="bhishm">Bhishm</div>
+    <div id="karn">Karn</div>
+
+    <script>
+        $("div").click(function () {
+            var info = ["This is CSS information for below box"];
+            var stl = $(this).css(["height", "background-color", "width", "border", "float", "text-align", "margin"]);
+            // console.log(stl);
+            $(this).css({
+            color : "red"
+            })
+            
+            // console.log(stl);
+            $.each(stl, function (prop, value) {
+                info.push(prop + ":" + value);            
+                // console.log(info);
+            });
+            $("#result").html(info.join("<hr>"))
+        })
+
+    </script>
+</body>
+
+</html>
