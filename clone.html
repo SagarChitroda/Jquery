@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        #div_one{
+            background-color: aquamarine;
+        }
+        #div_two{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="div_one">
+        <h1>clone h1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis explicabo libero quia, pariatur perspiciatis numquam tempora tempore eum ducimus dolore deleniti cum culpa nulla placeat quas. Fugit earum labore rerum!</p>
+
+        <h2>clone h2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non placeat tempore sapiente maiores optio aliquam itaque, amet delectus omnis exercitationem, porro officiis nostrum. Corrupti, placeat asperiores cum alias veniam at!</p>
+    </div>
+    <div id="div_two">
+
+    </div>
+
+    <button id="clone"> Clone </button>
+
+    <script>
+
+        $('#clone').click(function(){
+            $('#div_one p').clone().prependTo('#div_two') // $('#div_one p') if you need to clone h2 write down h2 insted of 'p'
+        })
+
+    </script>
+
+</body>
+</html>
