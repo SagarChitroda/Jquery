@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Text</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <style>
+        #div_one{
+            background-color: cadetblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="div_one">
+        <h1>After Text</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sunt tempore quas modi sapiente ipsam tenetur, ratione assumenda earum dolore architecto porro aperiam a. Nisi tempora rerum deleniti quae unde.</p>
+        
+    </div>
+
+    <button id="aftertext">Add After text</button>
+
+    <script>
+
+        $('#aftertext').click(function(){
+            $('#div_one').after('<h1> Add this text</h1>')
+        })
+
+    </script>
+
+</body>
+</html>
