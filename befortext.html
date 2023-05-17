@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor Text</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        #div_one{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="div_one">
+        <h1>Before Add Text</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga ad quaerat laboriosam nostrum eos itaque, quas id molestiae deleniti natus, dicta voluptate? Ipsum molestias nemo voluptatibus ullam accusamus optio.</p>
+        <button id="beforetext">Add Befor Text</button>
+    </div>
+<script>
+
+    $('#beforetext').click(function(){
+        $('#div_one').before('<h1> Add this text </h1>')
+    })
+
+</script>
+
+</body>
+</html>
