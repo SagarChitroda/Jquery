@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedout</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color: blueviolet;
+        }
+        #box3{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <button id="fedout"> Fedout </button>
+
+    <script>
+        $('#fedout').click(function(){
+            $('#box1').fadeOut(2000)
+            $('#box2').fadeOut(5000)
+            $('#box3').fadeOut(10000) 
+        })
+    </script>
+</body>
+</html>
