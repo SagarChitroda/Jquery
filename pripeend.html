@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prepend</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        #div_one{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="div_one">
+        <h1>prepend</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veritatis, totam, voluptatum sint, cum laudantium expedita quia error iste architecto eveniet rerum fugit. Doloribus in necessitatibus nostrum reiciendis exercitationem neque!</p>
+    </div>
+
+    <button id="Prepeend">Prepeend</button>
+    <button id="Append">Append</button>
+
+    <script>
+
+        $('#Prepeend').click(function(){
+            $('#div_one').prepend('<h1> Add this text </h1>')
+        })
+
+        $('#Append').click(function(){
+            $('#div_one').append('<h1> Add this text </h1>')
+        })
+
+    </script>
+
+</body>
+</html>
