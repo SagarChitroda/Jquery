@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasclass</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+
+        .color{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="box" class="">
+        <h1>hasclass</h1>
+        <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, tenetur voluptate sint eveniet facilis laudantium fugiat repudiandae, soluta laboriosam quos nobis enim quia amet tempore aliquam illum? Numquam, maiores mollitia.</p>
+        <button id="hasclass">check class</button>
+    </div>
+
+    <script>
+
+        
+        $("#hasclass").click(function(){
+            // console.log($('#box').hasClass('color'));
+    
+
+        var x = $('#box').hasClass('color')
+
+        if (x == true) {
+            console.log('good');
+        } else {
+            console.log('false');
+        }
+    });
+    </script>
+</body>
+</html>
