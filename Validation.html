@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        .one{
+            background-color: rgb(76, 197, 197);
+            height: 850px;
+        }
+        .two{
+            text-align: center;
+            padding: 150px 0;
+        }
+        p{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="one">
+        <div class="two">
+            <form onsubmit="return validForm()">
+
+                <input type="text" name="" id="username" placeholder="Enter your name"> <br>
+                <p ID="usererror"></p>
+
+                <input type="password" name="" id="password" placeholder="password"> <br>
+                <p ID="passworderror"></p>
+
+                <input type="radio" name="gender" id="gender">Male
+                <input type="radio" name="gender" id="gender1">Female
+                <p id="option"></p>
+
+                <input type="submit" value="submit">
+                
+            </form>
+        </div>
+    </section>
+
+    <script>
+        let username = document.getElementById("username")
+        let usererror = document.getElementById("usererror")
+
+        let password = document.getElementById("password")
+        let passworderror = document.getElementById("passworderror")
+
+        let gender = document.getElementById("gender")
+        let gender1 = document.getElementById("gender1")
+        let option = document.getElementById("option")
+
+        console.log(username);
+        console.log(password);
+        function validForm() {
+
+            if (username.value == "") {
+                // document.getElementById("usererror").innerHTML = "Enter your username"
+                usererror.innerHTML = "enter your name"
+                event.preventDefault()
+            }
+            else{
+                document.getElementById("usererror").innerHTML = ""
+            }
+
+            if (password.value == ""){
+                document.getElementById("passworderror").innerHTML = "Enter your password"
+                // passworderror.innerHTML = "enter your password"
+                event.preventDefault()
+            }
+            else if(password.value.length < 8){
+            // console.log("8 max");
+            passworderror.innerHTML = "max 8 char"
+            event.preventDefault()
+         }
+            else{
+                document.getElementById("passworderror").innerHTML = ""
+            }
+            if(gender.checked == true || gender1.checked == true){
+                Option.innerHTML=""
+                event.preventDefault()
+            }
+            else{
+                Option.innerHTML="***Please select any one option***"
+                event.preventDefault()
+                return false
+            }
+            return true
+
+        }
+    </script>
+
+</body>
+</html>
